@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Train YOLO Model</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Train YOLO Model</h1>
+    <form action="/train" method="post">
+        <label for="epochs">Number of Epochs:</label>
+        <input type="number" name="epochs" min="1" max="100" value="5">
+        <input type="submit" value="Train" onclick="href = '/download'">
+    </form>
+</body>
+</html>
